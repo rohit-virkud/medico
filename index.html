@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>General Clinic Template</title>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+ <style type="text/css">
+ 	*{
+ 		margin: 0;
+ 		padding: 0;
+ 		box-sizing: border-box;
+ 		font-family: Lato;
+ 	}
+ 	body
+ 	{
+ 		background: #07242E;
+ 		color: white;
+ 	}
+
+ 	img
+ 	{
+ 		max-width: 100%;
+ 	}
+ 	.container-wrapper
+ 	{
+ 		width: 100%;
+ 		min-height: 100vh;
+ 		display: flex;
+ 		justify-content: center;
+ 		align-items: center;
+        position: sticky;
+		top: 0;
+
+ 	}
+ 	.my-container
+ 	{
+
+     width: 90%;
+     height: 100vh;
+     
+     font-weight: 400;
+  
+
+ 	}
+
+
+.background-grid-img {
+  position: absolute;
+  left: auto;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  display: block;
+  width: 70vw;
+  height: 100vh;
+}
+.image-block
+{
+  display: flex;
+  overflow: hidden;
+  width: 140px;
+  height: 140px;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  border-top-style: solid;
+  border-top-width: 3px;
+  border-top-color: hsla(0, 0.00%, 100.00%, 1.00);
+  border-right-style: solid;
+  border-right-width: 3px;
+  border-right-color: hsla(0, 0.00%, 100.00%, 1.00);
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-color: hsla(0, 0.00%, 100.00%, 1.00);
+  border-left-style: solid;
+  border-left-width: 3px;
+  border-left-color: hsla(0, 0.00%, 100.00%, 1.00);
+  border-top-left-radius: 84%;
+  border-top-right-radius: 84%;
+  border-bottom-left-radius: 84%;
+  border-bottom-right-radius: 84%;
+  background-color: hsla(183.8709677419355, 87.15%, 48.82%, 1.00);
+  color: hsla(183.8709677419355, 0.00%, 100.00%, 1.00);
+  filter: drop-shadow(0px 10px 35px rgba(23, 181, 240, 0.431));
+}
+.brand-icon
+{
+	width: 75px;
+	height: 75px;
+}
+.name-headline
+{
+   width: 300px;
+  margin-top: 25px;
+  color: hsla(0, 0.00%, 100.00%, 1.00);
+  font-weight: 900;
+  font-size: 38px;
+  letter-spacing: 0.1em;
+  margin-left: 8px;
+}
+.subhead
+{
+
+  width: 300px;
+  color: hsla(183.42857142857142, 94.59%, 92.75%, 1.00);
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  margin-top: 9px;
+  margin-left: 8px;
+
+}
+
+.contact-container {
+  display: flex;
+  margin-top: 35px;
+  justify-content: flex-start;
+  align-items: center;
+
+filter: drop-shadow(0px 5px 20px rgba(13, 157, 227, 0.38));
+}
+
+
+.icon-container {
+  
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  background-color: hsla(183.8709677419355, 87.15%, 48.82%, 1.00);
+  margin-left: 8px;
+}
+
+
+.contact-text{
+  overflow: visible;
+  width: 300px;
+  height: auto;
+  margin-left: 18px;
+  color: hsla(0, 0.00%, 100.00%, 1.00);
+  font-size: 18px;
+  font-weight: 400;
+  column-count: auto;
+}
+.icon-phone
+{
+	width: 20px;
+	height: 20px;
+}
+.icon-home
+{
+	width: 27px;
+	height: 21px;
+}
+.icon-msg
+{
+	width: 22px;
+	height: 18px;
+}
+.icon-location
+{
+	width: 19px;
+	height: 24px;
+}
+.icon-world
+{
+	width: 23px;
+	height: 23px;
+}
+.mg-top-low
+{
+	margin-top:20px;
+}
+
+
+.big-icons {
+  display: flex;
+  margin-top: 47px;
+  justify-content: center;
+  align-items: center;
+}
+
+.big-icon-text-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.big-icon-holder{
+  display: flex;
+  width: 60px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  border-top-style: solid;
+  border-top-width: 3px;
+  border-top-color: hsla(0, 0.00%, 100.00%, 1.00);
+  border-right-style: solid;
+  border-right-width: 3px;
+  border-right-color: hsla(0, 0.00%, 100.00%, 1.00);
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-color: hsla(0, 0.00%, 100.00%, 1.00);
+  border-left-style: solid;
+  border-left-width: 3px;
+  border-left-color: hsla(0, 0.00%, 100.00%, 1.00);
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  background-color: hsla(183.8709677419355, 87.15%, 48.82%, 1.00);
+}
+
+
+.image-4{
+  padding-right: 0px;
+  padding-left: 4px;
+}
+
+
+.text-block-6 {
+  margin-top: 8px;
+  color: hsla(0, 0.00%, 100.00%, 1.00);
+  font-size: 20px;
+  text-align: center;
+  width: 80px;
+
+
+}
+.mg-left-47
+{
+	margin-left: 47px;
+}
+
+.another-slide
+ 	{
+ 		width: 100%;
+ 		min-height: 100vh;
+ 		display: block;
+ 		background: #1d3138;
+ 		color: white;
+ 		position: sticky;
+		top: 0;
+ 	}
+.cover
+{
+	width: 100%;
+	top: 0;
+
+}
+.info-container
+{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.info
+{
+	width: 80%;
+}
+.info h1{
+	width: 300px;
+  margin-top: 28px;
+  color: hsla(0, 0.00%, 100.00%, 1.00);
+  font-weight: 900;
+  font-size: 38px;
+  letter-spacing: 0.1em;
+  
+}
+.info .follow-text
+{
+	 font-size: 28px;
+	 margin-top: 48px;
+	 margin-left: 5px;
+}
+
+.info p{
+	font-weight: 300;
+	margin-left: 5px;
+	margin-top: 18px;
+	margin-left: 5px;
+}
+.icon-group
+{
+	margin-top: 20px;
+	display: flex;
+}
+.img-icon
+{
+	width: 50px;
+	height: 50px;
+}
+.mg-left-21
+{
+	margin-left: 30px;
+}
+.review-text
+{
+	margin-top: 10px;
+}
+.mg-down-25
+{
+	margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+ </style>
+
+</head>
+<body>
+
+<div class="container-wrapper">
+  <img src="lines for background@2x.png" class="background-grid-img">
+  
+  <div class="my-container">
+
+  	<!-- brand / logo icon  -->
+  	<div class="image-block">
+  		<img src="logo.png" class="brand-icon">
+  	</div>
+
+  	<!-- headline  -->
+  	<h1 class="name-headline">Elena Papadopoulou</h1>
+  	<p class="subhead">General Clinic</p>
+
+
+    <!-- contacts  -->
+  	<div class="contact-container">
+  		<div class="icon-container">
+  			<img src="phone.png" class="icon-phone">
+  		</div>
+  		<p class="contact-text">+30 6936503000.</p>
+  	</div>
+
+
+  	<div class="contact-container mg-top-low">
+  		<div class="icon-container">
+  			<img src="home.png" class="icon-home">
+  		</div>
+  		<p class="contact-text">+30 2109595074.</p>
+  	</div>
+
+  	
+
+  	<div class="contact-container mg-top-low">
+  		<div class="icon-container">
+  			<img src="msg.png" class="icon-msg">
+  		</div>
+  		<p class="contact-text">info@artcoolcards.gr.</p>
+  	</div>
+
+  	<div class="contact-container mg-top-low">
+  		<div class="icon-container">
+  			<img src="location.png" class="icon-location">
+  		</div>
+  		<p class="contact-text" style="line-height: 27px;">+Lisikratous 88, Kallithea, 17674 Athens, Greece</p>
+  	</div>
+
+  	<div class="contact-container mg-top-low">
+  		<div class="icon-container">
+  			<img src="world.png" class="icon-world">
+  		</div>
+  		<p class="contact-text">www.artcoolcards.gr</p>
+  	</div>
+
+  
+
+   <div class="big-icons">
+   	
+   	 <div class="big-icon-text-container">
+   	 	<div class="big-icon-holder">
+   	 		<img src="contact.png" class="image-4">
+   	 	</div>
+   	 	<p class="text-block-6">save my contacts</p>
+   	 </div>
+
+
+   	 <div class="big-icon-text-container mg-left-47">
+   	 	<div class="big-icon-holder">
+   	 		<img src="share.png" class="image-4" style="width: 34px;height: 32px;">
+   	 	</div>
+   	 	<p class="text-block-6">share my contacts</p>
+   	 </div>
+    
+   </div>
+
+
+  </div>
+</div>
+
+  <div class="another-slide">
+  	 
+  	 <div class="doctor">
+  	 	<img src="cover.png" class="cover">
+  	 	<div class="info-container">
+  	 		<div class="info">
+		  	 	<h1>ΥΠΗΡΕΣΊΕΣ</h1>
+		  	 	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis doloreeum iriure dolor in hendrerit in</p>
+
+                   
+
+                <h1 class="follow-text">FOLLOW US</h1> 
+                <div class="icon-group">
+                	<a href="#"><img src="color@2x.png" class="img-icon"></a>
+                	<a href="#"><img src="color.png" class="img-icon mg-left-21"></a>
+                	<a href="#"><img src="colytor.png" class="img-icon mg-left-21"></a>
+                </div>  
+
+
+                <h1 class="follow-text review-text">OUR REVIEWS</h1> 
+                <div class="icon-group mg-down-25">
+                	<a href="#"><img src="Tripadvisor.png" class="img-icon"></a>
+                	<a href="#"><img src="bookingcom.png" class="img-icon mg-left-21"></a>
+                </div>
+
+
+
+
+
+
+		  	</div> 	
+  	    </div>
+  	 </div>
+    
+
+  </div>
+
+
+</body>
+</html>
